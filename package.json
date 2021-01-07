@@ -1,0 +1,17 @@
+{
+  "name": "Monitoring Pajak",
+  "version": "1.0.0",
+  "description": "Monitoring Pajak",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon index.js"
+  },
+  "keywords": [
+    "BKD KOTA MATARAM"
+  ],
+  "author": "Ali Farhan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
