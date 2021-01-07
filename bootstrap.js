@@ -5,16 +5,16 @@
  * metadata-driven class system features 
  */
 Ext.Loader.addClassPathMappings({
-  "EJS": "app",
+  "Monitoring": "app",
   "Ext": "ext/src",
   "Ext.locale.en.ux.picker.DateTimePicker": "ext/src/ux/DateTimePicker.js",
   "Ext.rtl.EventObjectImpl": "ext/src/rtl/EventObject.js"
 });
 Ext.ClassManager.addNameAlternateMappings({
-  "EJS.Application": [],
-  "EJS.controller.Main": [],
-  "EJS.view.Main": [],
-  "EJS.view.Viewport": [],
+  "Monitoring.Application": [],
+  "Monitoring.controller.Main": [],
+  "Monitoring.view.Main": [],
+  "Monitoring.view.Viewport": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],
@@ -832,12 +832,12 @@ Ext.ClassManager.addNameAlternateMappings({
   ]
 });
 Ext.ClassManager.addNameAliasMappings({
-  "EJS.Application": [],
-  "EJS.controller.Main": [],
-  "EJS.view.Main": [
+  "Monitoring.Application": [],
+  "Monitoring.controller.Main": [],
+  "Monitoring.view.Main": [
     "widget.app-main"
   ],
-  "EJS.view.Viewport": [],
+  "Monitoring.view.Viewport": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],

@@ -1,5 +1,5 @@
-Ext.define('EJS.Application', {
-	name: 'EJS',
+Ext.define('Monitoring.Application', {
+	name: 'Monitoring',
     extend: 'Ext.ux.desktop.App',
 
     requires: [
@@ -15,6 +15,7 @@ Ext.define('EJS.Application', {
         'MyDesktop.Notepad',
         'MyDesktop.BogusMenuModule',
         'MyDesktop.BogusModule',
+        'MyDesktop.Bphtb.Bphtb',
 
 //        'MyDesktop.Blockalanche',
         'MyDesktop.Settings'
@@ -38,7 +39,8 @@ Ext.define('EJS.Application', {
             new MyDesktop.AccordionWindow(),
             new MyDesktop.Notepad(),
             new MyDesktop.BogusMenuModule(),
-            new MyDesktop.BogusModule()
+            new MyDesktop.BogusModule(),
+            new MyDesktop.Bphtb.Bphtb(),
         ];
     },
 
@@ -55,14 +57,19 @@ Ext.define('EJS.Application', {
             shortcuts: Ext.create('Ext.data.Store', {
                 model: 'Ext.ux.desktop.ShortcutModel',
                 data: [
-                    { name: 'Grid Window', iconCls: 'grid-shortcut', module: 'grid-win' },
                     { name: 'Accordion Window', iconCls: 'accordion-shortcut', module: 'acc-win' },
-                    { name: 'Notepad', iconCls: 'notepad-shortcut', module: 'notepad' },
-                    { name: 'System Status', iconCls: 'cpu-shortcut', module: 'systemstatus'}
+                    { name: 'Monitoring BPHTB', iconCls: 'cpu-shortcut', module: 'bphtb' },
+                    { name: 'Monitoring REKLAME', iconCls: 'cpu-shortcut', module: 'grid-win' },
+                    { name: 'Monitoring HOTEL', iconCls: 'cpu-shortcut', module: 'grid-win' },
+                    { name: 'Monitoring RESTORAN', iconCls: 'cpu-shortcut', module: 'grid-win' },
+                    { name: 'Monitoring PARKIR', iconCls: 'cpu-shortcut', module: 'grid-win' },
+                    { name: 'Monitoring HIBURAN', iconCls: 'cpu-shortcut', module: 'grid-win' },
+                    // { name: 'Notepad', iconCls: 'notepad-shortcut', module: 'notepad' },
+                    // { name: 'System Status', iconCls: 'cpu-shortcut', module: 'systemstatus'}
                 ]
             }),
 
-            wallpaper: 'ext/shared/wallpapers/Blue-Sencha.jpg',
+            wallpaper: 'ext/shared/wallpapers/logo.png',
             wallpaperStretch: false
         });
     },
@@ -72,7 +79,7 @@ Ext.define('EJS.Application', {
         var me = this, ret = me.callParent();
 
         return Ext.apply(ret, {
-            title: 'Don Griffin',
+            title: 'BKD Kota Mataram',
             iconCls: 'user',
             height: 300,
             toolConfig: {

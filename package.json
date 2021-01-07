@@ -1,17 +1,23 @@
 {
-  "name": "Monitoring Pajak",
+  "name": "monitoring",
   "version": "1.0.0",
   "description": "Monitoring Pajak",
   "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pg-promise": "^10.8.6"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start":"nodemon index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [
-    "BKD KOTA MATARAM"
+    "BKD",
+    "KOTA",
+    "MATARAM"
   ],
   "author": "Ali Farhan",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.13.4"
-  }
+  "license": "ISC"
 }

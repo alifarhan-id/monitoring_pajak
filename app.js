@@ -12,7 +12,7 @@ Ext.Loader.setPath({
 });
 
 Ext.application({
-    name: 'EJS',
-    extend: 'EJS.Application',
+    name: 'Monitoring',
+    extend: 'Monitoring.Application',
     autoCreateViewport: true
 });

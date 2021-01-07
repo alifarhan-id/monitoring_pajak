@@ -1,4 +1,4 @@
-Ext.define('EJS.view.Main', {
+Ext.define('Monitoring.view.Main', {
     extend: 'Ext.container.Container',
     requires:[
         'Ext.tab.Panel',
